@@ -1,0 +1,37 @@
+.error--msg {
+  position: fixed;
+  display: none;
+  top: 16%;
+  z-index: 999;
+  width: 235px;
+  margin: 0 6px;
+  height: 85px;
+  border-radius: 10px 10px 0 0;
+  background-color: #89d8a1;
+}
+.error--msg .content--msg {
+  height: 96%;
+  padding: 10px;
+  font-size: 14px;
+  color: #9a5f5f;
+}
+.error--msg .timeline--msg {
+  background: #222;
+  width: 1%;
+  position: absolute;
+  height: 5px;
+  bottom: 0;
+  border: 1px;
+}
+.error--msg .timeline--animation {
+  animation: timeline 5s linear both;
+}
+
+@keyframes timeline {
+  0% {
+    width: 1%;
+  }
+  100% {
+    width: 100%;
+  }
+}
